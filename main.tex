@@ -1,0 +1,147 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{JFUE-D-25-00337 Comments from reviewer}
+\author{Xue Yong}
+\date{March 2025}
+
+\begin{document}
+
+\maketitle
+
+\section{Review1}
+Reviewer 1: The paper submitted to the journal Fuel is concerned with generating a dataset of permittivity and density values for various hydrocarbon classes using a combination of molecular dynamics (MD) simulations and experimental methods. The selected families and specific molecules are primary components found in jet fuel with carbon numbers C5 to C17.
+The topic of sustainable aviation fuels (SAF) is very relevant. In particular, the question of how to evaluate (experimentally or numerically) specification and fit-for-purpose properties to populate large databases for deriving reliable prescreening models based on molecular structure-property relationship, which is in essence the method proposed here.
+The research presented in this paper is original and innovative. The reviewer (and probably some readers) regrets the absence of physical analysis. In particular, concerning the permittivity, one would have expected a physical explanation about this quantity, its effect on capacitance and how it relates to the molecular structure. This would help understanding "The complex relationships between these properties and their connection to the chemical composition.", as mentioned in the abstract.  Not just the engineering aspect of its utility in gauging.
+However, to the reviewer's opinion this good work deserves to be published in FUEL. No major revisions only minor comments:
+
+General comments/question:
+Authors should (maybe in an outlook) give their insight into how good the MD-based property model performs for complex mixtures and real fuels?
+Authors should mention that C5 and C6 are not in the kerosene cut/jet fuel molecules pool.
+
+Lines 33-35: This sentence is not clear. Also, "challenging" instead of "challenge"
+Figure 1, legend third family: Do the authors mean HDCJ Hydrotreated Depolymerized Cellulosic Jet?
+Line 78: "is"?
+Line 87: World Fuel Survey
+Figure 3, Legend: Although not beneficial for the readers, a bibliographic reference in the text which cannot be accessed might be okay. In a graphic presentation of results, however, this is rather difficult. The reviewer cannot verify this plot as it stems from a non-verifiable reference. It is not clear if the results were plotted by the authors of copied from reference [13].
+Line 132-133: The low AARD reported later applies to surrogate mixtures containing 2 or 3 molecules. Even here in the text when the authors write RP-3 it is misleading as the article they refer to actually uses a surrogate mixture for RP-3. Consequently, RP-3 should be designated also as a surrogate fuel.
+Table 1: Considering the 80% purity for iso-dodecane and 95% for iso-pentane, what is the impact of 20% unknown product, 5% respectively on the accuracy of the measurement results and on the reliability of this product in contributing to this small experimental database?
+Line 175: 10 to 30 °C is quite a narrow range when considering the range of temperatures prevailing in wing tanks. How well does the results and the analysis extrapolate to flight conditions?
+Line 179: cyclo-hexane or cyclohexane?
+Line 193: Figure 4 (space)
+Line 195: Permittivity, capital "P".
+Line 205, lines 232-233, and line 269: NPT? OPLS-AA?, and RDkit and OpenBabel, respectively. Some acronyms are not explained in the text.
+Line 207: What does 100 bar refer to, not 1.0 atm.
+Line 209 and 211: reviewer recommends SI unit, i.e. "s" for seconds, "1.0 fs"  1.0 x 10-15 s. Same for ns.
+Line 219: fields
+Line 234: "combination" should be combining rules
+Line 248-249: Reviewer would recommend citing results from scientific literature.
+Line 255: Verify that the reference to Figure 11. Reviewer would suggest Figure 8?
+Line 272: "[…] with the 6-31g(d) basis set us Gaussian16 software." Not clear
+Lines 291 - 293: Add how it compares to experimental values so the reader can understand the trend i.e. more molecules better accuracy, or not?
+Lines 325 - 326: "This increases the molecule's kinetic energy, resulting in tighter or denser molecular packing of the system" What is the physical explanation?
+Lines 328 - 331: "Our simulation results are in good agreement with the literature data indicating that the increase in the total carbon number of most hydrocarbons, except alkylbenzene and naphthalene, leads to a higher density [32, 33, 34]". This is a qualitative statement. Any quantitative metrics, which can be used here?
+Figure 11: Cyclo-paraffins have two molecular sub-structures, which affect differently the physical properties of the bulk. One saturated cyclic part and one linear part. What types were chosen here, especially when looking at higher carbon numbers and what was the relative effect?
+Line 344. Authors should explain "as expected" to the readers.
+Lines 349 - 350: "the slope of increase is slower than expected, which is attributed to numerical errors", What is expected? A comparison with experimental/NIST values might be helpful.
+
+
+\section{Review2}
+Reviewer 2: This manuscript uses a combination of experiments and MD simulations to calculate permittivity and density of hydrocarbon compounds for different classes. The manuscript is very well written. The authors first verify their MD simulations against experimental data. The MD simulation derived properties for the chosen force field show excellent agreement with the experimental data. A dataset has been generated using MD simulations alone to calculate properties for a larger collection of hydrocarbon molecules. I would be happy to recommend the manuscript for publication once the authors address the following questions
+Major Comments:
+1.      The measured value of dielectric constant shown in Fig 4 seem to change with time for the same temperature. For example, at around 2 min and 11 minutes, the temperature is around 15 C. However, the corresponding dielectric constant values are significantly different within the range shown in the figure for the same temperature. What is the reason for this discrepancy? How did the authors account for this uncertainty in their measurements? 
+2.      Following MD simulations details need to be added to the description:
+a.      What were the temperature and pressure damping constants?
+b.      How frequently was the data collected from MD simulations (either time interval or number of steps)?
+3.      What are the uncertainties in MD simulations (standard deviations for example) as well as experiments? These error bars should be added in all the figures and their calculation method described in the text.
+4.      It would be informative for the readers to know percentage errors between MD derived properties and experiments. How do these errors compare to accuracy expected from ASTM methods?
+5.      What do the lines and symbols mean in Fig 11? Are the lines just a fit? The caption needs to be modified to explain what lines and symbols represent.
+6.      How did the authors account for impurities while performing experiments? For example, iso-dodecane has a purity of 80%. However, the MD simulations and experiments match within an error that is less than 20%. What are these 20% impurities? How would they affect the experimental measurement uncertainty? The authors need to clarify this point in the text.
+7.      Is the MD dataset being made available online? Is it available upon request? If yes, it should be noted in the manuscript.
+8.      Minor comments: The manuscript has minor formatting related errors. I have pointed out a few below (as examples) but the entire manuscript should be carefully reread to make sure these errors are rectified.
+a.      Line 34: "challenge" to "challenging"
+b.      Line 38: Reference should come after the full stop. "[2]." to ".[2]"
+c.      Line 78: "permittivity are usually" to "permittivity is usually"
+
+
+\section{Review3}
+Reviewer 3: This manuscript investigated the construction of a novel dataset for permittivity/density of hydrocarbon classes in the range of aviation fuels via molecular dynamic simulations and experiments. This study addresses a critical gap in the characterization of permittivity and density for hydrocarbon classes relevant to sustainable aviation fuels (SAFs). The integration of molecular dynamics (MD) simulations with experimental validation is a robust approach, and the generated dataset has potential applications in fuel prescreening and SAF development. However, the manuscript requires significant revisions to enhance clarity, methodological transparency, and alignment with current literature. The research was relatively useful, but the experimental work was not enough. Therefore, the manuscript should be published after some revision. The details are given hereinafter.
+
+Comments:
+
+1. The highlights need to be concise. There should be 3-5 points with bullets.
+
+2. There are too many abbreviation in the manuscript. An abbreviation section was suggested.
+
+3. While the manuscript emphasizes the novelty of combining MD simulations with experiments, the unique contribution of this work compared to existing studies (e.g., Yang et al. on SAF dielectric properties or Freitas et al. on MD-guided machine learning models) is not explicitly highlighted. The authors should clarify how their methodology advances beyond prior work, particularly in modeling molecular-level interactions for SAF constituents. The exclusion of aromatics, a major hydrocarbon class in jet fuels, limits the dataset's applicability. A justification for this exclusion (e.g., experimental constraints or SAF composition focus) must be provided.
+
+4. The description of the JetDC 88500-0 instrument's calibration process (Section 2.1) is insufficient. For reproducibility, include details on stability criteria (e.g., temperature equilibration time, tolerance thresholds) and error margins for permittivity/density measurements.
+
+5. The rationale for selecting only 11 hydrocarbon samples (Table 1) is unclear. Given the limited cycloparaffin data (only two samples), the authors should address potential biases or gaps in representativeness.
+
+6. Figures 6-8 and 11-16 suffer from poor labeling (e.g., missing units, undefined abbreviations like "C5 cyclic"). Axes should explicitly state parameters (e.g., permittivity in F/m, density in g/cm³).
+
+7. A consolidated table comparing simulated vs. experimental values (with uncertainties) for all hydrocarbons would improve data accessibility.
+8. The conclusion overstates the implications without addressing limitations (e.g., exclusion of aromatics, small sample size). Future work should explicitly outline plans to incorporate aromatics or blends.
+
+9. The choice of OPLS-AA over Amber force fields requires deeper validation. While Figure 9 compares results, quantitative metrics (e.g., mean absolute error, R² values) are missing. A table summarizing deviations between simulations and experiments for all compounds would strengthen this section.
+
+10. Numerous grammatical errors and awkward phrasing (e.g., "permettivity are usually presented as a function of density" to "permittivity is usually presented") require thorough editing.
+
+11. Key recent studies on SAF property prediction (e.g., Yang et al., 2025 [14]) are cited, but foundational works like Riazi (2007) dominate. Include more recent reviews (e.g., 2021 - 2025) to contextualize SAF challenges.
+
+No further questions.
+
+CONCLUDING REMARKS
+
+The manuscript can be accepted after major revision.
+
+\section{Review4}
+
+Reviewer 4: The authors of this manuscript employed molecular dynamics simulations to calculate the permittivity and density of selected hydrocarbons, which are purportedly present in modern sustainable aviation fuels. The concept presented in this study is intriguing; however, its execution raises several concerns.
+At its current stage, the manuscript is not suitable for publication and requires significant improvements before it can be reconsidered. By addressing the missing elements, strengthening the methodology with additional supporting data, and enhancing the discussion, this work could potentially meet the standards for publication in Fuel after RESUBMISSION.
+To assist in improving the manuscript, I provide the following comments, suggestions, and questions for the authors' consideration. Please note that comments marked with (*) indicate issues of higher importance.
+
+1.      Highlights: Please shorten the highlights section. Some bullet points do not seem to qualify as highlights. For example, the fourth bullet point could be reconsidered.
+2.      (*) Please avoid using slash-separated words in professional communications. Examples from your manuscript include 'When/if,' 'Bulk/major,' and 'Permittivity/Density' (in the title). Consider rewording these phrases.
+3.      L51: Please correct ASTM D7566-2250 to ASTM D7566-22
+4.      L53: The meaning of A3 and A7 is unclear without a proper introduction to the annexes in ASTM D7566. Please provide context or a brief explanation.
+5.      Figure 1: Please provide reference to the JETSCREEN project.
+6.      L81-86: Please provide a reference for the study conducted by Goodrich Corporation to support this statement.
+7.      (*) I appreciate the authors citing the work from the University of Dayton, including Figure 3. However, I would expect a more detailed discussion on what is actually presented in this figure and how it relates to the objectives of your paper.
+8.      L113-123: I recommend moving this paragraph, which describes the objective of your paper, to the last paragraph of the Introduction section to enhance the logical flow and clarity of your presentation.
+9.      (*) L154-161: When you wrote, "This study ..." did you mean your own study or the study by Freitas [20]? Please clarify. Additionally, in line 159 onwards, you mention the inclusion of hydrocarbon branching in modeling due to its substantial effect on precision. Is this a general recommendation, or is it something you have implemented in this work? Please elaborate and revise if necessary for clarity.
+10.     L167-170: The relevance of this information to the main focus of the paper is unclear. Consider removing it or rewriting it to clarify its significance.
+11.     (*) L171: I am not sure I fully understand the justification for using such a limited dataset of hydrocarbons in this study. Generally, it is neither difficult nor expensive to obtain a broader range of standards. Could you clarify why a more comprehensive dataset was not used?
+12.     (*) The chemical names for isoparaffins and cycloparaffins in Table 1 and the text are incorrectly written. The dash symbol should not be used in these names. The correct forms are: isopentane, isohexane, isododecane, cyclopentane, and cyclooctane.
+13.     (*) Data set: The authors state that their primary objective is to study molecules relevant to aviation fuel. However, many of the molecules included in their experiments are not commonly found in either conventional or sustainable aviation fuels. The typical boiling point range of jet fuel falls between 150°C and 275°C, yet the dataset includes highly volatile molecules such as n-pentane, isopentane, and cyclopentane, which are not representative of jet fuel fractions. Additionally, cyclooctane is not a typical cycloparaffin found in either petroleum-derived or sustainable aviation fuels. In conclusion, only five molecules (n-octane, n-nonane, n-decane, n-dodecane, and isododecane) can be considered relevant and justified within the context of this study. The authors should refine their selection criteria to ensure alignment with real aviation fuel compositions.
+14.     (*) Could the authors clarify why aromatic compounds/molecules were not included in their research? Additionally, why are dicycloparaffins (such as derivatives of decalin), which are commonly found in lignin-derived SAF, absent from the study?
+15.     (*) L174: Please specify the exact temperature at which the measurement was performed, rather than stating that the temperature was measured three times within the 10-30°C range.
+16.     Equation 1: In this equation C0 - represents the permittivity of vacuum. However, measuring permittivity under vacuum conditions can be challenging. Could you clarify how the measurements were conducted in practice?
+17.     (*) L181-196: Was the experimental procedure applied to all hydrocarbons in the same manner as presented for cyclohexane? If so, please generalize this section and replace 'cyclohexane' with a more generic term such as 'hydrocarbon' or 'model compound'.
+18.     Section 3.0.1: The manuscript does not clearly explain how permittivity and density were calculated from the MD study. The current explanation in Lines 212-215 is too brief and lacks sufficient detail. Please provide a diagram, scheme, or relevant equations to clarify this aspect of the study. This will help readers better understand the methodology used for these calculations. Please also see my comment No. 30.
+19.     (*) L255: The authors reference Figure 11 immediately after Figure 5. Should the figures be renumbered to maintain sequential order? Additionally, in Figure 11, the carbon number range appears to be 5 to 13, whereas the authors imply a range up to 12. Could this discrepancy be clarified?  Furthermore, Figure 11 presents data for 27 molecules, while Table 1 only mentions 11 molecules. How should readers interpret line 254, where the authors state: "The OPLS-AA force field showed better agreement with the experimental values"? Should this statement be reconsidered in light of the difference in the number of molecules reported?
+20.     (*) L262: The authors state that "the normal paraffins demonstrate a high degree of correlation (R² = 0.99)." However, it is unclear what specific correlation is being referred to. From Figure 6, it appears that the relationship between the number of carbon atoms and density is non-linear. Please clarify the nature of this correlation and expand the discussion accordingly. Additionally, the parity plot should be presented in a clearer manner, ensuring that it accurately represents the data. Including error bars for the experimental data would also enhance the clarity and reliability of the presented results.
+21.     (*) Figure 6a: Please check the equation presented in Figure 6a. There appears to be an awkward term, "-0.00 × x²", which may not be meaningful or necessary - consider revising it for clarity.
+22.     In Figure 6, please indicate the temperature used for the measurement (e.g., 10°C, 20°C, or 30°C). Additionally, discuss the accuracy of your measurements by comparing the reported Density and Permittivity values with those available in the literature for the same compounds at the same temperature.
+23.     (*) I am unsure why the authors have presented the results of MD simulations and experimental values for permittivity and density in Section 3 rather than in the Results and Discussion section. In my opinion, all these results should be included in the Results and Discussion section, accompanied by a proper discussion.
+24.     (*) In Figure 8, the authors present results for cyclohexane (C6); however, Table 1 lists cyclooctane (C8) instead, and cyclohexane does not appear to have been investigated experimentally. Please verify this discrepancy and make the necessary corrections.
+25.     (*) At the end of the Introduction, the authors emphasize the importance of the precision of the model, particularly when dealing with a limited amount of experimental data. However, for example, based on the results for density, there appears to be a significant discrepancy between the simulated and experimental values. In contrast, QSPR models, which are computationally more efficient and require fewer resources, seem to yield lower errors. Could the authors justify the advantages of their model despite these discrepancies? Additionally, how do they defend its predictive reliability compared to QSPR-based approaches?
+26.     Shouldn't the construction of the structural model (Section 3.3) be presented before Section 3.0.1, Simulation Details?
+27.     L267-269: Please rewrite this sentence for clarity, as it is difficult to follow. Specifically, clarify what is meant by "H was added from RDKit and OpenBabel.
+28.     (*) Section 3.4: The authors stated that "A negligible permittivity decrease with increased system size was observed." However, they report that the permittivity values for n-decane changed from 1.99 to 1.96, which corresponds to a difference of 0.03. This change is not negligible. For comparison, the experimental difference in permittivity between n-octane and n-nonane is 0.02, and between n-nonane and n-decane, it is also 0.02. Furthermore, the difference between C10 d C12 is only 0.03. Given this context, a change of 0.03 in permittivity should not be considered insignificant. Additionally, in the supplementary materials, the authors report a permittivity value of 2.0198 for n-decane, which is inconsistent with the range presented in the main text (1.992 - 1.963 in Line 292). Could the authors clarify how this discrepancy arises and provide an explanation for the variation in reported values? Nota bene there is no reference to the Supplementary Materials in the main
+text.
+29.     (*) Figures 9 and 10 are not referenced in the main text. Please ensure that all figures are appropriately cited and discussed within the manuscript. Additionally, there is little discussion regarding Figure 9. Based solely on the results presented in this figure, it is difficult to draw any meaningful conclusions. I recommend providing a more detailed interpretation of the findings.
+30.     The explanation of Permittivity/Density calculations in Section 3.5 should be presented earlier in the manuscript. This information is fundamental to understanding subsequent discussions and would improve the logical flow of the paper.
+31.     (*) The Research and Discussion section lacks a clear introduction to the presented results in the Experimental section. Specifically, I noticed that the authors report permittivity and density values for a new set of molecules. However, it is unclear how these molecules were selected, and no details about their characteristics or selection criteria are provided. The manuscript would benefit from a more explicit explanation of this aspect. Additionally, it would strengthen the manuscript if the authors applied traditional models commonly used for predicting these properties (e.g., the Clausius-Mossotti relationship) to the same set of molecules and compared the predicted values with their own calculations. Such a comparison would help contextualize the results and demonstrate how their approach aligns with or diverges from established methods.
+32.     (*) The effects presented in Section 4.1 are well-documented in the literature. Could you clarify the novelty of your findings in this context? Several studies have already reported similar correlations, with the primary distinction likely being the method used to calculate the properties.
+33.     (*) Section 4.2: I am not sure whether the authors have properly selected the molecules or adequately discussed their results. For example, the discussion on the increasing density from 2-methylheptane to 4-propylheptane may not be directly related to branching but rather to the increasing carbon number, as observed in Figure 11. It is expected that 4-propylheptane (C10H22) would have a higher density than 2-methylheptane (C8H18) simply due to its larger molecular size.If the goal was to investigate the effect of branching, a more diverse set of isoparaffins should be selected, with alkyl groups attached to different carbon atoms within the same molecular framework. This approach would allow for a clearer analysis of the effect of substitution position on the investigated properties. However, in the current selection, both the position and the length of the substitution are varied simultaneously, making it difficult to isolate the impact of branching. Additionally, the
+dataset is limited to only monosubstituted isoparaffin, which further restricts the scope of the analysis
+34.     (*) Section 4.3: I am not sure if the authors fully understand the term branching in the context of cycloparaffins. Based on the provided discussion, it appears that the authors are referring to the effect of alkyl chain length attached to the cycloparaffinic core rather than actual branching. When discussing branching in cyclohexane derivatives, I would expect either multiple substitutions (e.g., comparing 1,1,2-trimethylcyclohexane with 1,2,3-trimethylcyclohexane) or variations in the position of alkyl substituents. However, I do not see such variations explicitly considered in this section.
+35.     (*) Figure 16 appears to be a compilation of Figures 13, 14, and 15. Given this redundancy, could the authors clarify the necessity of presenting Figures 13, 14, and 15 separately? If they do not provide additional insights beyond Figure 16, their inclusion may not be justified.
+36.     (*) According to the experimental section, the measurements were performed at different temperatures. However, the effect of temperature on the properties of paraffins was not further investigated or discussed in the study. Could you clarify why this aspect was not explored in more detail? Additionally, the methodology presented here does not appear to have been tested on binary blends. Given that jet fuel—whether SAF or conventional—consists of a complex mixture of hundreds of different molecules rather than a uniform set of identical compounds, applying the methodology to binary blends could provide valuable insights. Could you elaborate on why this was not considered in the study?
+37.     (*) In several instances, the authors refer to 'a novel dataset.' Could you clarify what makes this dataset novel? How was the novelty established? Additionally, have the permittivity and density values in this dataset been properly validated? The calculations appear to have been performed on a distinct dataset compared to those that were 'truly' validated in Table 1. What is the error associated with these calculations, and how does it compare to the validated data?
+38.     References: Several publications listed in this section are missing the journal name and/or the publication year. Please review and correct accordingly.
+
+
+\end{document}
